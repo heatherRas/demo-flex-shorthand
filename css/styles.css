@@ -71,13 +71,45 @@ h3 {
 /* ==========================================================
    STEP 1: Two columns with the flex shorthand
    ========================================================== */
+.sidebar {
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 15rem; */
+    /* This is the shorthand version, of the above. It is recommended to use all three in the flex shorthand so that all the properties work together. */
+    /* flex: flex-grow flex-shrink flex-basis */ 
 
+    flex: 1 1 15rem;
+}
+
+.content {
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 45rem; */
+/* This is the shorthand version, of the above. */
+    flex: 1 1 45rem;
+}
 
 
 /* ==========================================================
    STEP 2: Three columns
    ========================================================== */
+   /* Equal columns: flex: 1; sets basis to 0; Every column starts at 0 and gets an equal amount of space no matter how much content it has in it. */
 
+.equal {
+    flex: 1 1 0;
+
+    /* The keyword for this is 1 */
+    flex: 1;
+}
+
+.left,
+.right {
+    flex: 1 1 15rem;
+}
+
+.middle {
+    flex: 1 1 30rem;
+}
 
 
 /* ==========================================================

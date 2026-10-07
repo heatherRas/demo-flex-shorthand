@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shorthand</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <p>WEBD1003</p>
+        <h1>Flex Shorthand</h1>
+    </header>
+
+    <!-- Step 3: the max-width wrapper. -->
+    <main class="wrapper">
+        <!-- Step 1: Two columns -->
+        <section>
+            <h2>1. Two Columns</h2>
+            <p class="note">Mockup is 960px wide: a 240px sidebar and a 720px content area.</p>
+            <div class="flex">
+                <aside class="col sidebar">
+                    <p>Sidebar</p>
+                    <p>240px ÷ 16 = 15rem</p>
+                </aside>
+                <article class="col content">
+                    <p>Content</p>
+                    <p>720px ÷ 16 = 45rem</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Step 2: Three columns -->
+        <section>
+            <h2>2. Three Columns</h2>
+
+            <h3>Equal columns</h3>
+            <div class="flex">
+                <div class="col equal">flex: 1</div>
+                <div class="col equal">flex: 1</div>
+                <div class="col equal">flex: 1</div>
+            </div>
+
+            <h3>Mockup: 240px, 480px, 240px</h3>
+            <div class="flex">
+                <aside class="col left">
+                    <p>Left</p>
+                    <p>15rem</p>
+                </aside>
+                <article class="col middle">
+                    <p>Middle</p>
+                    <p>30rem</p>
+                </article>
+                <aside class="col right">
+                    <p>Right</p>
+                    <p>15rem</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Step 3: Fluid vs fixed -->
+        <section>
+            <h2>3. Fluid vs Fixed</h2>
+
+            <h3>Fluid: flex shorthand with rem</h3>
+            <div class="flex">
+                <aside class="col sidebar">flex: 1 1 15rem</aside>
+                <article class="col content">flex: 3 1 45rem</article>
+            </div>
+
+            <h3>Fixed: 960px row, 240px and 720px columns</h3>
+            <div class="flex fixed">
+                <aside class="col fixed-sidebar">240px</aside>
+                <article class="col fixed-content">720px</article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

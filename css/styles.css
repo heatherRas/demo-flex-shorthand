@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf6f0;
+    color: #111;
+}
+
+header {
+    padding: 2rem 1.25rem 1rem;
+    border-bottom: 3px solid #2b2a28;
+}
+
+section {
+    padding: 1.25rem;
+}
+
+h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h3 {
+    margin: 1.25rem 0 0.5rem;
+    font-size: 1rem;
+}
+
+.note {
+    margin-bottom: 0.75rem;
+}
+
+/* Every row is a flex container. */
+.flex {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Visual styling only, so we can see the size of each column. */
+.col {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid;
+    background-color: lightsalmon;
+    border-color: tomato;
+}
+
+.sidebar,
+.left,
+.right,
+.fixed-sidebar {
+    background-color: lemonchiffon;
+    border-color: gold;
+}
+
+.fixed-sidebar,
+.fixed-content {
+    background-color: yellowgreen;
+    border-color: olivedrab;
+}
+
+
+/* ==========================================================
+   STEP 1: Two columns with the flex shorthand
+   ========================================================== */
+
+
+
+/* ==========================================================
+   STEP 2: Three columns
+   ========================================================== */
+
+
+
+/* ==========================================================
+   STEP 3: Max-width wrapper vs fixed width
+   ========================================================== */
